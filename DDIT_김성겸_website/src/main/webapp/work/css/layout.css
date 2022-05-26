@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+body {
+	min-width : 700px;
+	min-height: 100px;
+	color: rgb(16, 86, 82);
+	font-family: 'Playfair Display', serif;
+}
+	
+
+header, nav, aside, section, footer {
+	border : none ;
+	box-sizing: border-box;
+	background: rgb(254, 251, 231);
+	
+}
+header{
+	background: rgb(254, 251, 231);
+}
+header a{
+	font-size : 1.4em;
+}	
+
+#right div{
+	margin-top: 20px;
+	margin-bottom : 30px;
+}
+nav{
+	padding-top:20px;
+	width:100%;
+	height : 90px;
+	overflow: hidden;
+	border: dashed 1px ;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	text-align: center;
+}
+header{
+	height : 150px;
+	font-size: 2.5em;
+	text-align: center;
+	padding-top: 40px;
+}
+footer{
+	clear : both;
+	height : 100px;	
+	text-align: center;
+	padding-top : 40px;
+	
+}
+
+li {
+	display : inline-block;
+	width : 160px;
+	height : 20px;
+	float : none;
+}
+#nav li{
+	margin-top : 20px;
+	display : inline-block;
+	width : 340px;
+	height : 40px;
+	text-align: center;
+	overflow: auto;
+	float : none;
+}
+#nav ul{
+	margin : 2px auto;
+	margin-left : 10%;
+	margin-right : 10%;
+    font-size: 1.7em;
+}
+
+aside{
+	float : left;
+}
+#leftul li {
+	height : 35px;
+	font-size: 1.5em;
+	border: solid 1px ;
+	border-left-style: none;
+	border-right-style: none;
+	text-align: center;
+	margin: 5px;
+}
+section{
+	float : left;
+}
+#right{
+	float : left;
+	text-align: center;
+	font-size: 1.3em;
+	padding-left:10px; 
+	padding-right: 10px;
+	
+}
+#right p{
+	font-size : 0.65em;
+}
+#left, #right{
+	width : calc(14% );
+	height : 800px;
+	background: rgb(254, 251, 231);
+}
+section{
+	width : calc(72%);
+	height : 800px;
+}
+iframe{
+	width : 100%;
+	height : 793px;
+	background:rgb(255, 255, 255);
+}
+#left{
+	padding-left : 1px;
+}
+a:link{
+		color : rgb(16, 86, 82);
+		text-decoration: none;
+	}
+a:visited{
+		color :rgb(16, 86, 82);
+	}
+#right input{
+	width : 80%;
+}
+#cart{
+	height : 300px;
+}
+#right div{
+	border : 1px solid rgb(16, 86, 82);
+	border-left-style:none;
+	border-right-style:none;
+}
+
+
