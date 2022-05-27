@@ -2,6 +2,11 @@
 	body{
 	background-color: #FFFFEE;
 	}
+	pre{
+		color :#103232;
+		font-size : 2.7em;
+		font-family: 'Playfair Display', serif;
+	}
 	div{
 		width : 98.9%;
 		height : 770px;
