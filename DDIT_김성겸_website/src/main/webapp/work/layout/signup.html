@@ -2,45 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <title>SignUP Page</title>
-    <link rel="stylesheet" href="../css/signup.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<title>SignUP Page</title>
+<link rel="stylesheet" href="../css/signup.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+h1{
+text-align: center;
+font-size: 25px;
+}
+</style>
 </head>
 
 <body>
-<form action="test4.jsp" method="post">
+<h1>Welcome to LOLO VÈVÈ</h1> 
+<form action="../jsp/signup.jsp" method="post">
     <div class="wrapper">
-    	<h2>Welcome to LOLO VÈVÈ</h2>
-        <div class="title"><h1 style="font-size: 21px;">Create an account</h1></div>
-        <label for="mail">ID(e-mail)</label>
+        <div class="title"><h1>Create an account</h1></div>
+        <label for="email">ID(e-mail)</label>
         <div class="email">
-            <input id="email" name="mail" placeholder="Enter your e-mail" required>
+            <input name="email" placeholder="Enter your e-mail" required>
             <div id="emailError" class="error"></div>
         </div>
         <label for="name">Name</label>
         <div class="name">
-            <input id="name"  type="text" placeholder="Enter your name" required>
+            <input name="name"  type="text" placeholder="Enter your name" required>
             <div id="nameError" class="error"></div>
         </div>
         <label for="password">Password</label>
         <div class="password">
-            <input id="password" type="password" placeholder="Enter your password" required>
+            <input name="password" type="password" placeholder="Enter your password" required>
             <div id="passwordError" class="error"></div>
         </div>
         <div class="passwordCheck">
-            <input id="passwordCheck" type="password" placeholder="Re-enter your password" required>
+            <input name="passwordCheck" type="password" placeholder="Re-enter your password" required>
             <div id="passwordCheckError" class="error"></div>
         </div>
         <label for="phone">Phone</label>
         <div class="phone">
-            <input id="phone1" type="text" size="1" maxlength="3" pattern="[0-9]{2,3}" required> -
-            <input id="phone2" type="text" size="3" maxlength="4" pattern="[0-9]{3,4}" required> -
-            <input id="phone3" type="text" size="3" maxlength="4" pattern="[0-9]{4}" required>
+            <input name="phone1" id="phone1" type="text" placeholder="000" size="1" maxlength="3" pattern="[0-9]{2,3}" required> -
+            <input name="phone2" id="phone2" type="text" placeholder="0000" size="3" maxlength="4" pattern="[0-9]{3,4}" required> -
+            <input name="phone3" id="phone3" type="text" placeholder="0000" size="3" maxlength="4" pattern="[0-9]{4}" required>
         </div>
-        <div class="area">
-            <select id="area">
+        <div class="country">
+            <select name="country">
                 <option selected disabled>Country</option>
                 <option>United State</option>
                 <option>Korea</option>
@@ -49,16 +55,16 @@
             </select>
             <div id="areaError" class="error"></div>
         </div>
-        <div class="gender" id="gender">
-            <input type="radio" name="gender" required>Male  
-            <input type="radio" name="gender" required>Female
+        <div class="gender">
+            <input type="radio" name="gender" value="male" required>Male  
+            <input type="radio" name="gender" value="female" required>Female
             <div id="genderError" class="error"></div>
         </div>
         <div class="line">
             <hr>
         </div>
         <div class="signUp">
-            <input type="submit" id="signUp" value="Create an account">
+            <input type="submit" name="signUp" value="Create an account">
         </div>
     </div>
 </form>
