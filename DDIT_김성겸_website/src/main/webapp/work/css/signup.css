@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-size: 15px;
     font-family: 'Playfair Display', serif;
-    background-color:  #FFFFEE;
+    background-color:  #FFFFFF;
 }
 
 html {
@@ -18,11 +18,11 @@ html {
 
 body {
     width: 45%;
-    border: 1px solid #f37021;
+    border: 1px solid #000000;
 }
 
 input{
-    border: 1px solid #f37021;
+    border: 1px solid #000000;
      border-radius: 3px;
     line-height: 35px;
     font-size: 12px;
