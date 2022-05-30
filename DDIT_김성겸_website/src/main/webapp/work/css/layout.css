@@ -23,9 +23,11 @@ header{
 }
 header a{
 	font-size : 1.4em;
-	
 }	
-
+img{
+	width: 90x;
+	height: 90px;
+}
 nav{
 	padding-top:20px;
 	width:100%;
