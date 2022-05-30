@@ -8,10 +8,8 @@
 <link rel="stylesheet" href="../css/layout.css">
 <style>
 div{
-text-align: center;
-}
-pre{
-	font-size: 25px;
+	text-align: center;
+	font-size: 30px;
 	font-family: 'Playfair Display', serif;
 }
 </style>
@@ -32,13 +30,14 @@ pre{
 <div>
 <hr>
 <h1> Hi! <%=name %>, Welcome to LOLO VÈVÈ </h1><br>
-</div>
 <hr>
-<pre>
+<h2>User Info</h2>
+
 		E-mail : <%=email %> <br>
 		Phone Number : <%=phone1%> - <%=phone2%> - <%=phone3%> <br>
 		Country : <%=country %> <br>
 		Gender : <%=gender %> <br>
-</pre>
+</div>
+
 </body>
 </html>
