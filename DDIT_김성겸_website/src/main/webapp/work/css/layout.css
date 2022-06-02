@@ -27,8 +27,9 @@ header a{
 audio{
 	width: 300px;
 	height: 36px;
-	position: relative;
-	left: 70%;
+	position: absolute;
+	top: 5%;
+	left: 80%;
 }
 img{
 	height: 60px;

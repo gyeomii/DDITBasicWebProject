@@ -11,9 +11,14 @@
 video{
 	width: 80%;
 }
-img{
-width: 15%;
-height: 200px;
+input{
+width: 10%;
+height: 15%;
+}
+iframe{
+width:80%;
+height: 80%;
+text-align: center;
 }
 </style>
 </head>
@@ -21,12 +26,11 @@ height: 200px;
 	<div>
 		<h2>ABOUT US</h2>
 		<hr>
-		<video controls autoplay muted>
-			<source src="">
-		</video><br>
-		
-		<input type="image" src="../../image/nike.png" onclick="video.location.src='../../multi/nike.mp4'">
-		<img alt="versace" src="../../image/versace.png">
+		<input type="image" src="../../image/nike.png" onclick="ifr.location.href='../../multi/nike.mp4'">
+		<input type="image" src="../../image/versace.png" onclick="ifr.location.href='../../multi/versace.mp4'">
+		<hr>
+		<iframe name="ifr" src="../../image/background.png"></iframe>
+		<br>
 	</div>
 </body>
 </html>
