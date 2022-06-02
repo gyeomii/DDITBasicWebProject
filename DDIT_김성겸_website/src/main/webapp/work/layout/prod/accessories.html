@@ -13,7 +13,7 @@
 	<article>
  		<div>
  			<figure><img src="../../image/accessories/1.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(0)">
  			<p id="name">La Medusa Leather Belt</p>
  			<p id="price">￦1,048,000</p>
  		</div>
@@ -22,7 +22,7 @@
  	<article>
  		 <div>
  			<figure><img src="../../image/accessories/2.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(1)">
  			<p id="name">La Greca Leather Belt</p>
  			<p id="price">￦1,400,000</p>
  		</div>
@@ -31,7 +31,7 @@
  	<article>
  		 	<div>
  			<figure><img src="../../image/accessories/3.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(2)">
  			<p id="name">Gold Safety Pin Belt</p>
  			<p id="price">￦1,520,000</p>
  		</div>
@@ -40,7 +40,7 @@
  	<article>
  		 <div>
  			<figure><img src="../../image/accessories/4.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(3)">
  			<p id="name">Medusa Squared Sunglasses</p>
  			<p id="price">￦1,405,000</p>
  		</div>
@@ -49,7 +49,7 @@
  	<article>
  		 <div>
  			<figure><img src="../../image/accessories/5.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(4)">
  			<p id="name">Medusa Biggie Sunglasses</p>
  			<p id="price">￦1,390,000</p>
  		</div>
@@ -58,7 +58,7 @@
  	 	<article>2k22
  		 <div>
  			<figure><img src="../../image/accessories/6.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(5)">
  			<p id="name">Medusa Shield Sunglasses</p>
  			<p id="price">￦1,309,000</p>
  		</div>
@@ -67,7 +67,7 @@
  	 <article>
  		 <div>
  			<figure><img src="../../image/accessories/7.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(6)">
  			<p id="name">Gold Baroque Silk Foulard</p>
  			<p id="price">￦1,239,000</p>
  		</div>
@@ -76,7 +76,7 @@
  	 	<article>
  		 <div>
  			<figure><img src="../../image/accessories/8.png"></figure>
- 			<input type="button" value="Add to CART">
+ 			<input type="button" value="Add to CART" onclick="addCart(7)">
  			<p id="name">Gold Baroque Silk Foulard</p>
  			<p id="price">￦1,139,000</p>
  		</div>
@@ -91,5 +91,17 @@
  	</article>
  	
  </section>
+ <script>
+ let arrName = ["La Medusa Leather Belt","La Greca Leather Belt","Gold Safety Pin Belt","Medusa Squared Sunglasses",
+	 		"Medusa Biggie Sunglasses","Medusa Shield Sunglasses","Gold Baroque Silk Foulard","Gold Baroque Silk Foulard"];
+ 
+ let arrPrice = ["1048000", "1400000", "1520000", "1405000", "1390000", "1309000", "1239000", "1139000"]
+ function addCart(num){
+	 let idx = parseInt(num);
+	 let name = arrName[idx];
+	 let price = arrPrice[idx];
+	 location.href="../cart.html?" + name + "/" + price;
+ }
+ </script>
 </body>
 </html>
